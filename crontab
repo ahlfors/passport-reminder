@@ -1,0 +1,4 @@
+# Asia/Shanghai 时区（容器已配置）
+# 每天 06:00 和 16:30 执行护照提醒
+0 6 * * * /usr/local/bin/passport-notify.sh >> /var/log/passport-notify.log 2>&1
+30 16 * * * /usr/local/bin/passport-notify.sh >> /var/log/passport-notify.log 2>&1

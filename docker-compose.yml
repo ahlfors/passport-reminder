@@ -1,0 +1,7 @@
+services:
+  passport-reminder:
+    build: .
+    container_name: passport-reminder
+    restart: unless-stopped
+    env_file:
+      - .env
